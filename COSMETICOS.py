@@ -38,15 +38,18 @@ while respuesta==1:
     if seleccion==2:
         BuscarVenta=int(input("Que venta quieres buscar?: \n"))
         if BuscarVenta in ventas.keys():
+            print(yellow)
             print(ventas[BuscarVenta])
+            print(white)
             respuestaW=int(input("Quiere realizar otra busqueda?: 1 - SI o 0 - NO\n"))
         else:
-            print("No se ha realizado alguna venta con ese numero de venta")
-            respuestaW=int(input("Quiere realizar otra venta?:\n  1 - SI o 0 - NO \n" ))
+            print(green + "No se ha realizado alguna venta con ese numero de venta")
+            respuestaW=int(input(white + "Quiere realizar otra venta?:\n  1 - SI o 0 - NO \n" ))
+        
             
         
     if seleccion==3:
-        print("Ha finalizado correctamente el programa")
+        print(green + "Ha finalizado correctamente el programa, gracias por haber comprado.")
         break
         
         
